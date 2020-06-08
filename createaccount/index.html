@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Polk Scholars</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="icon" type="image/gif/png" href="../images/favicon.ico">
+    </head>
+
+    <body>
+
+
+        <!-- Start Contact Section -->
+        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+            <div class="w3-content">
+                <img src="../images/PolkCountyStudentsFirst.png" height="100">
+
+                <h1>Create Account</h1>
+                <h2>Please use an email that you check regularly.</h2>
+
+                <script type="text/javascript">var submitted=false;</script>
+
+                <!--Update the URL for thank you page on form submit -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+                        onload="if(submitted) {window.location='../survey/index.html';}"></iframe> 
+                
+                <div class="container">
+                    <!-- Update the Google forms URL in action-->
+                    <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSe1V9gLU8bQd8--3Dcyxg2-1YXPtWeA-YeYttNTZDZV5KFJcw/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+
+                        <div class="w3-section margin-bottom">
+                            <label>First Name</label><br>
+                            <input class="w3-input w3-border" type="text" id="fname" required name="entry.1222139247">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>Last Name</label><br>
+                            <input class="w3-input w3-border" type="text" id="lname" required name="entry.1756172943">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>Username</label><br>
+                            <input class="w3-input w3-border" type="text" id="uname" required name="entry.1760369499">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>Email</label><br>
+                            <input class="w3-input w3-border" type="text" id="email" required name="entry.1579119577">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>Password</label><br>
+                            <input class="w3-input w3-border" type="text" id="paname" required name="entry.602233535">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>Confirm Password</label><br>
+                            <input class="w3-input w3-border" type="text" id="cpname" required name="entry.1394229818">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>Secure Pin</label><br>
+                            <input class="w3-input w3-border" type="text" id="piname" required name="entry.256198869">
+                        </div>
+
+
+                        <div class="w3-section">
+                            <button class="button button-accent w3-button w3-block w3-black w3-margin-bottom margin-top" type="submit">Continue</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+
+
+            function validateForm() {
+                submitted=true;
+                return true;
+            }
+        </script>
+        <!-- End Contact Section -->
+
+    </body>
+</html>

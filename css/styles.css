@@ -1,0 +1,106 @@
+/***************************
+FONT IMPORTS
+***************************/
+@font-face {
+    font-family: Metropolis;
+    src: url(../fonts/Metropolis.otf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/***************************
+COLOR VARIABLES
+***************************/
+:root {
+    --main-bg-color: #ffffff;
+    --button-bg-color: #5fc5ba;
+    --button-text-color: #fff;
+}
+
+/***************************
+GENERAL
+***************************/
+
+* {
+    font-family:  Roboto, Metropolis, sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+
+.container {
+    border: none;
+    background: white;
+    padding: 24px;
+}
+
+
+@media (min-width: 70rem) {
+    .container {
+        width: 30vw;
+        margin-left: 35vw;
+        margin-right: 35vw;
+        align-content: center;
+    }
+}
+
+
+.button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 11px 24px 10px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+label {
+    font-size: 12px;
+    color: #656B73;
+    text-align: left;
+    float: left;
+}
+
+h3 {
+    font-size: 12px;
+    text-align:right;
+    padding-bottom: 1em;
+}
+
+h3 a {
+    text-decoration: none;
+    color: #656B73;
+    text-align: right;
+}
+h6, button {
+    font-size: 20px;
+}
+
+input {
+    margin: 0px 0px 16px;
+    padding: 5px 0px 5px 12px;
+    background: #f7f7f7;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    float: left;
+}
+
+button {
+    border: none;
+}

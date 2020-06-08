@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Polk Scholars</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="icon" type="image/gif/png" href="../images/favicon.ico">
+    </head>
+
+    <body>
+
+
+        <!-- Start Contact Section -->
+        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+            <div class="w3-content">
+                <img src="../images/PolkCountyStudentsFirst.png" height="100">
+
+                <h1>Survey</h1>
+
+                <script type="text/javascript">var submitted=false;</script>
+
+                <!--Update the URL for thank you page on form submit -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+                        onload="if(submitted) {window.location='../thanks/index.html';}"></iframe> 
+
+                <div class="container">
+                    <!-- Update the Google forms URL in action-->
+                    <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdcGrGVMrXdiwcx88IJXGjr6Fj9ZleoPp32PD7fdwJ-Mn-wzQ/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+
+                        <div class="w3-section margin-bottom">
+                            <label>High School</label><br>
+                            <input class="w3-input w3-border" type="text" id="fname" required name="entry.1222139247">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>GPA (Weighted)</label><br>
+                            <input class="w3-input w3-border" type="text" id="lname" required name="entry.1756172943">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>GPA (Unweighted)</label><br>
+                            <input class="w3-input w3-border" type="text" id="uname" required name="entry.1760369499">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>Class Rank</label><br>
+                            <input class="w3-input w3-border" type="text" id="rank" required name="entry.1394229818">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>Do you play any sports? If so, name them:</label><br>
+                            <input class="w3-input w3-border" type="text" id="sports" required name="entry.1579119577">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>Do you do any extracurriculars? If so, briefly name them:</label><br>
+                            <input class="w3-input w3-border" type="text" id="ecs" required name="entry.1579119577">
+                        </div>
+
+                        <div class="w3-section margin-bottom">
+                            <label>What College/University do you plan to attend?</label><br>
+                            <input class="w3-input w3-border" type="text" id="paname" required name="entry.602233535">
+                        </div>
+
+
+
+
+                        <div class="w3-section">
+                            <button class="button button-accent w3-button w3-block w3-black w3-margin-bottom margin-top" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+
+
+            function validateForm() {
+                 submitted=true;
+                return true;
+            }
+        </script>
+        <!-- End Contact Section -->
+
+    </body>
+</html>
